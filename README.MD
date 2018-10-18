@@ -5,7 +5,7 @@ Practice using collections by building a deck of cards. Add to deck, remove from
 - git clone
 - cd Lab07-Collections/Lab07-Collections
 - dotnet run
-* or
+# or
 - Open with Visual Studio -> Start Without Debugging
 
  ## Visual
