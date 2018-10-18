@@ -24,27 +24,18 @@ namespace Lab07_Collections
             Card twoDiamonds = new Card(Suit.Diamonds, Value.Two);
             Card kingHearts = new Card(Suit.Hearts, Value.King);
 
-            List<Card> cards = new List<Card>
-            {
-                aceClubs,
-                ThreeDiamonds,
-                queenSpades,
-                jackSpades,
-                sevenClubs,
-                fourDiamonds,
-                fourClubs,
-                nineHearts,
-                twoDiamonds,
-                kingHearts
-            };
-
-
             Deck<Card> deck = new Deck<Card>();
 
-            foreach (Card card in cards)
-            {
-                deck.Add(card);
-            }
+            deck.Add(aceClubs);
+            deck.Add(ThreeDiamonds);
+            deck.Add(queenSpades);
+            deck.Add(jackSpades);
+            deck.Add(sevenClubs);
+            deck.Add(fourDiamonds);
+            deck.Add(fourClubs);
+            deck.Add(nineHearts);
+            deck.Add(twoDiamonds);
+            deck.Add(kingHearts);
 
             Card[] cardsOfSuit = deck.ReturnSuit(Suit.Hearts);
 
