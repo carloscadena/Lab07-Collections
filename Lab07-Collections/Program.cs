@@ -37,11 +37,29 @@ namespace Lab07_Collections
             deck.Add(twoDiamonds);
             deck.Add(kingHearts);
 
-            Card[] cardsOfSuit = deck.ReturnSuit(Suit.Hearts);
+            Console.WriteLine("Cards in the deck are:");
+            foreach (Card card in deck)
+            {
+                Console.WriteLine($"{card.Value}: {card.Suit}");
+            }
 
+            Card[] cardsOfSuit = deck.ReturnSuit(Suit.Hearts);
+            Console.WriteLine("------------------------------");
+            Console.WriteLine("Cards in deck that are of the suit Hearts:");
             foreach (Card card in cardsOfSuit)
             {
                 Console.WriteLine(card.Value);
+            }
+
+            Console.WriteLine("------------------------------");
+            Console.WriteLine("The deck with the Hearts removed:");
+            foreach (Card card in cardsOfSuit)
+            {
+                deck.Remove(card);
+            }
+            foreach (Card card in deck)
+            {
+                Console.WriteLine($"{card.Value}: {card.Suit}");
             }
         }
     }
